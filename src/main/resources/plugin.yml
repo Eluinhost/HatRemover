@@ -4,3 +4,9 @@ version: ${project.version}
 author: ghowden/Eluinhost
 database: false
 depend: [ProtocolLib]
+commands:
+  strip:
+    permission: hatremover.command.strip
+permissions:
+  hatremover.command.strip:
+    default: op

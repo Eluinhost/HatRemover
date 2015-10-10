@@ -41,6 +41,8 @@ public class Entry extends JavaPlugin {
             // update any online players so their skins are updated immediately
             modifier.updateAllOnlinePlayers();
 
+            getCommand("strip").setExecutor(new StripCommand(this, modifier));
+
             ProtocolLibrary.getProtocolManager().addPacketListener(modifier);
             getServer().getPluginManager().registerEvents(modifier, this);
         } catch (IllegalArgumentException ex) {
