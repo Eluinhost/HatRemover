@@ -16,3 +16,15 @@ layer rendered, whether they have it enabled or not and changing the setting in-
 
 Drop the .jar into `/plugins` and reload/restart the server. Any players online when installed will have to relog/change 
 their client settings for their hat layer to be removed.
+
+### Configuration
+
+If you want to do more than just force disable the hat layer you can edit the config.yml, here is the default:
+
+```yaml
+# Available parts: [CAPE, JACKET, LEFT_SLEEVE, RIGHT_SLEEVE, LEFT_PANT_LEG, RIGHT_PANT_LEG, HAT]
+force remove parts: [HAT]
+force enable parts: []
+```
+
+By adding parts to `force remove parts` and `force enable parts` you can modify which parts are shown.
